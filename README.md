@@ -1,7 +1,7 @@
 # Raycaster
-A C raycaster is a program that simulates a 3D environment by casting rays from the player's position and calculating the intersections with objects in the scene.
-The internal workings of the raycaster use a digital differential analyzer (DDA) algorithm to interpolate values faster while detecting horizontal or vertical lines. This allows for efficient rendering of the 3D environment and smooth movement of the player.
+A raycaster is a program that renders a 3D world based on a 2D map. It is a technique used in computer graphics to determine the visibility of objects in a 3D environment. It works by casting a "ray" from a point in the scene and checking for intersections with other objects.
 
-Overall, the C raycaster provides a fun and interactive experience for users to explore a 3D environment in real-time, with the ability to move and interact with the virtual world.
+The raycaster uses a digital differential analyzer (DDA) algorithm.
+DDA is a fast algorithm typically used on square grids to find which squares a line hits. So we can also use it to find which squares of the map our ray hits, and stop the algorithm once a square that is a wall is hit.
 
 ![raycaster1](https://user-images.githubusercontent.com/96767549/232308720-a2355c24-3b05-4f77-9545-b7cc2fc50d62.png)
